@@ -1,0 +1,25 @@
+{
+  "name": "trackingfedexsimulator",
+  "version": "1.0.0",
+  "description": "FedEx Tracking Simulation excercice for Platzi Master [C7]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsargentpepper/trackingFedexSimulator.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Elsa Portilla <elsa.portilla@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elsargentpepper/trackingFedexSimulator/issues"
+  },
+  "homepage": "https://github.com/elsargentpepper/trackingFedexSimulator#readme"
+}
