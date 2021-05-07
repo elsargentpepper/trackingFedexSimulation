@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fxpurple: #660099;
+    --fxorange: #ff6600;
+    --fxwhite: #fafafa;
+    --fxgrey: #696969;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+body{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    padding: .3rem;
+    background-color: var(--fxpurple);
+    color: var(--fxwhite);
+}
+.Header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.Nav-menu{
+    position: fixed;
+    right:100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: var(--fxwhite);
+}
+.Nav-menu a{
+    text-decoration: none;
+    color: var(--fxgrey);
+    font-size: 2rem;
+}
+.Nav-menu.active {
+    left: 0;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Nav-item{
+    margin: 2.5rem 0;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+.bar{
+    display: block;
+    width: 2.5rem;
+    height: .2rem;
+    margin: .5rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--fxwhite);
+}
+.Header-logo{
+    max-height: 1rem;
+}
+.Nav-icons{
+    display: flex;
+    flex-direction: row;
+}
+.Nav-user, .hamburger{
+    height: 2rem;
+    padding-left: 2rem;
+    padding-right: 0;
+}
+.Nav-search{
+    display: none;
+}
+#content{
+    background-color: aqua;
+}
+.Footer-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fx-sm-ico{
+    height: 4rem;
+}
+.Footer-copyright{
+    background-color: var(--fxpurple);
+    color: var(--fxwhite);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.texto-fx{
+    color: var(--fxpurple);
+    text-transform: uppercase;
+}

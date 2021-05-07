@@ -3,25 +3,25 @@ const Footer = () => {
     <div class="Footer-main">
         <div class="Footer-wrapper">
             <div class="Footer-social">
-                <span>Seguir a fedex</span>
+                <span class="texto-fx">Seguir a fedex</span>
                 <div class="icon-link">
                     <a href="url">
-                        <img src="icon" alt="Facebook">
+                        <img class="fx-sm-ico" src="/images/facebook.png" alt="Facebook">
                     </a>
                 </div>
                 <div class="icon-link">
                     <a href="url">
-                        <img src="icon" alt="Twitter">
+                        <img class="fx-sm-ico" src="/images/ig.png" alt="Twitter">
                     </a>
                 </div>
                 <div class="icon-link">
                     <a href="url">
-                        <img src="icon" alt="Youtube">
+                        <img class="fx-sm-ico" src="/images/yt.png" alt="Youtube">
                     </a>
                 </div>
                 <div class="icon-link">
                     <a href="url">
-                        <img src="icon" alt="LinkedIn">
+                        <img class="fx-sm-ico" src="/images/linkedin.png" alt="LinkedIn">
                     </a>
                 </div>
             </div>

@@ -1,37 +1,39 @@
 const Header = () => {
     const view =`
     <div class="Header-main">
-        <div class="Header-wrapper">
-            <div class="Header-logo">
-                <h1>
-                    <a href="/">
-                        <image src="/images/logo.png" alt="Página de inicio de FedEx"/>
-                    </a>
-                </h1>
-            </div>
-            <ul class="Header-nav">
-                <li>Envíos</li>
-                <li>Rastreo</li>
-                <li>Soporte</li>
-                <li>Cuenta</li>
-            </ul>
-            <div class="User-nav">
-                <div class="User-logo">
-                    <h1>
-                        <a href="/">
-                            <image src="" alt="User login"/>
-                        </a>
-                    </h1>
+        <nav class="Header-nav">
+                <div>
+                    <a href="/"><image class="Header-logo" src="/images/logo.png" alt="Página de inicio de FedEx"/></a>
                 </div>
-                <div class="Header-logo">
-                    <h1>
-                        <a href="/">
-                            <image src="" alt="Página de inicio de FedEx"/>
-                        </a>
-                    </h1>
+                <ul class="Nav-menu">
+                    <li class="Nav-item">
+                        <a href="#" class="Nav-link">
+                            Envíos</a>
+                    </li>
+                    <li class="Nav-item">
+                        <a href="#" class="Nav-link">Rastreo</a>
+                    </li>
+                    <li class="Nav-item">
+                        <a href="#" class="Nav-link">Soporte</a>
+                    </li>
+                    <li class="Nav-item">  
+                        <a href="#" class="Nav-link">Cuenta</a>
+                    </li>
+                </ul>
+                <div class="Nav-icons">
+                    <div>
+                            <a href="/"><image class="Nav-user" src="/images/user.png" alt="User login"/></a>
+                    </div>
+                    <div>
+                            <a href="/"><image class="Nav-search" src="/images/loupe.png" alt="Search"/></a>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </div>
-            </div>
-        </div>
+        </nav>
     </div>
     `
     return view;
