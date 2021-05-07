@@ -17,7 +17,11 @@ body{
     font-family: 'Roboto';
 }
 #header{
+    padding: 2rem;
     background-color: var(--fxpurple);
+    color: var(--fxwhite);
+}
+.Header-nav li{
     color: var(--fxwhite);
 }
 #content{
