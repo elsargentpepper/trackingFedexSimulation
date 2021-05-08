@@ -31,13 +31,13 @@ const Home = (data) => {
             <h3 class="title">Opciones de rastreo</h3>
             <div class="options-wrapper">
                 ${tracking_options_info.map(option =>
-                    `<div>
+                    `<div class="options-single">
                         <picture>
                             <img class="options-pic" src="${option.image}" alt="">
                         </picture>
                         <div class="advanced-tx">
-                            <h3 class="title">${option.title}</h3>
-                            <p class="title-p">${option.description}</p>
+                            <h3 class="title-opt">${option.title}</h3>
+                            <p class="title-opt-p">${option.description}</p>
                         </div>
                     </div>`
                     ).join('')}
@@ -46,7 +46,7 @@ const Home = (data) => {
         <div class="space"></div>
         <div class="extra-info">
             ${company_info.map(info => `
-                <div>
+                <div class="extra-info-inner">
                 <div class="text-fx">${info.title}</div>
                 <ul>
                 ${info.options.map(option =>`
@@ -55,7 +55,7 @@ const Home = (data) => {
                 </ul>
                 </div>
             `).join('')}
-            <div class="language">
+            <div class="extra-info-inner">
                 <div class="text-fx">${language}</div>
                     <figure>
                         <img class="globe" src="/images/globe.png" alt="globe">
@@ -63,6 +63,18 @@ const Home = (data) => {
                     </figure>
                 </div>
             </div>
+        <button class="btn btn-chat" type="button" onclick="openChat()">Chat</button>
+        <div class="Chatbox" id="chatbox">
+            <h4 class="title-chat">Mensaje</h4>
+            <form action="form-container">
+                <textarea type="text" placeholder="Type away..." name="msg" required=""></textarea>
+                <div class="chat-buttons">
+                    <button type="submit" class="btn btn-info btn-lg btn-send">Enviar</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-close" onclick="closeChat()">Cerrar</button>
+                </div>
+                
+            </form>
+        </div>
     </div>
     `
     return view;

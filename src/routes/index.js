@@ -37,8 +37,14 @@ const router = async () => {
     function closeMenu() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-}
-}
+    }
+    }
+
+    function openChat(){
+        document.getElementById('chatbox').style.display='block';
+        $('btn-chat').hide();
+    }
+
 };
 
 export default router;
