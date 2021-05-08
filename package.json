@@ -4,7 +4,7 @@
   "description": "FedEx Tracking Simulation excercice for Platzi Master [C7]",
   "main": "index.js",
   "scripts": {
-    "build":"webpack --mode production",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
   "repository": {
@@ -33,5 +33,8 @@
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

@@ -24,6 +24,7 @@ body{
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.2;
 }
 #header{
     padding: .3rem;
@@ -94,7 +95,8 @@ body{
 }
 .Nav-user, .hamburger{
     height: 5rem;
-    padding-left: 1rem;
+    padding-left: 1em;
+    padding-right: 1rem;
 }
 .Nav-search{
     display: none;
@@ -103,14 +105,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
-.spacer{
+.hero-image{
+    display: none;
+}
+.space{
     height: 2.5rem;
 }
 .title{
     font-weight: 300;
     text-align: center;
+
 }
 .title-p{
     padding: 2rem;
@@ -124,6 +130,15 @@ select{
     border: none;
     background-color: var(--fxlightgrey);
 }
+.advanced, .advanced-tx{
+    margin-top: 3rem;
+}
+.options-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 .Footer-social{
     display: flex;
     flex-direction: row;
@@ -133,25 +148,33 @@ select{
 .fx-sm-ico{
     height: 4rem;
 }
+.extra-info, .client-service, .language{
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
 .extra-info{
-    margin-top: 4rem;
+    line-height: 1.3;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
 }
 .text-fx{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--fxpurple);
     text-transform: uppercase;
     margin-left: 2rem;
 }
 .text-link{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--fxgrey);
     margin-left: 2rem;
 }
 .texto-fx{
     color: var(--fxpurple);
     text-transform: uppercase;
+    font-weight: bold;
 }
 .Footer-copyright{
     background-color: var(--fxpurple);
@@ -161,4 +184,24 @@ select{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+footer{
+    margin-top: 3rem;
+}
+.site-nav{
+    margin-top: 1rem;
+}
+.site-nav-tx{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.globe{
+    height: 3rem;
+    margin-left: 2rem;
+    opacity: 50%;
+    margin-top: 1rem;
+}
+figure{
+    display: flex;
+    align-items: center;
 }

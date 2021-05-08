@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = (data) => {
     const view =`
     <div class="Header-main">
         <nav class="Header-nav">
@@ -7,25 +7,24 @@ const Header = () => {
                 </div>
                 <ul class="Nav-menu">
                     <li class="Nav-item">
-                        <a href="#" class="Nav-link">
-                            Envíos</a>
+                        <a href="#" class="Nav-link">${data.shipping}</a>
                     </li>
                     <li class="Nav-item">
-                        <a href="#" class="Nav-link">Rastreo</a>
+                        <a href="#" class="Nav-link">${data.tracking}</a>
                     </li>
                     <li class="Nav-item">
-                        <a href="#" class="Nav-link">Soporte</a>
+                        <a href="#" class="Nav-link">${data.support}</a>
                     </li>
                     <li class="Nav-item">  
-                        <a href="#" class="Nav-link">Cuenta</a>
+                        <a href="#" class="Nav-link">${data.account}</a>
                     </li>
                 </ul>
                 <div class="Nav-icons">
                     <div>
-                            <a href="/"><image class="Nav-user" src="/images/user.png" alt="User login"/></a>
+                            <a href=""><image class="Nav-user" src="/images/user.png" alt="User login"/></a>
                     </div>
                     <div>
-                            <a href="/"><image class="Nav-search" src="/images/loupe.png" alt="Search"/></a>
+                            <a href=""><image class="Nav-search" src="/images/loupe.png" alt="Search"/></a>
                     </div>
                     <div class="hamburger">
                         <span class="bar"></span>

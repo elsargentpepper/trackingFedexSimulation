@@ -3,14 +3,23 @@ import Home from '../pages/Home';
 import Error404 from '../templates/Header';
 import Footer from '../templates/Footer';
 
+const FedxApiResource = require('../resources/FedxApiResource');
+
 const router = async () => {
     const header = null || document.getElementById('header');
     const footer = null || document.getElementById('footer');
     const content = null || document.getElementById('content');
 
-    header.innerHTML = Header();
-    footer.innerHTML = Footer();
-    content.innerHTML = Home();
+    const viewContent = await FedxApiResource.getView();
+    console.log(viewContent);
+
+    const headerData = viewContent.header || {}; 
+    const footerData = viewContent.footer || {}; 
+    const bodyData = viewContent.body || {}; 
+
+    header.innerHTML = Header(headerData);
+    footer.innerHTML = Footer(footerData);
+    content.innerHTML = Home(bodyData);
 
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".Nav-menu");
