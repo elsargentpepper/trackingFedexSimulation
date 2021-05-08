@@ -13,7 +13,7 @@ body{
     padding: 1rem 1rem;
 }
 .Header-logo{
-    max-height: 2rem;
+    max-height: 4rem;
 }
 .Nav-menu{
     position: inherit;
@@ -60,4 +60,16 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+.extra-info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.text-fx, 
+.text-link{
+    font-size: 1.2rem;
+}
+.texto-fx{
+    font-weight: bold;
+    font-size: 1rem;
 }

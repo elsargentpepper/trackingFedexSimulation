@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
 
 *{
     box-sizing: border-box;
@@ -10,6 +10,7 @@
     --fxorange: #ff6600;
     --fxwhite: #fafafa;
     --fxgrey: #696969;
+    --fxlightgrey: #DCDCDC;
 }
 html{
     font-size: 62.5%;
@@ -39,7 +40,7 @@ body{
 .Nav-menu{
     position: fixed;
     right:100%;
-    top: 5rem;
+    top: 11rem;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -69,38 +70,59 @@ body{
     opacity: 0;
 }
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
 }
-
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-45deg);
 }
 .bar{
     display: block;
     width: 2.5rem;
     height: .2rem;
-    margin: .5rem auto;
+    margin: 1rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--fxwhite);
 }
 .Header-logo{
-    max-height: 1rem;
+    max-height: 2.5rem;
+    margin: 2rem;
 }
 .Nav-icons{
     display: flex;
     flex-direction: row;
 }
 .Nav-user, .hamburger{
-    height: 2rem;
-    padding-left: 2rem;
-    padding-right: 0;
+    height: 5rem;
+    padding-left: 1rem;
 }
 .Nav-search{
     display: none;
 }
-#content{
-    background-color: aqua;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4rem;
+}
+.spacer{
+    height: 2.5rem;
+}
+.title{
+    font-weight: 300;
+    text-align: center;
+}
+.title-p{
+    padding: 2rem;
+}
+.tracking{
+    position: relative;
+}
+select{
+    width: 800px;
+    height: 5rem;
+    border: none;
+    background-color: var(--fxlightgrey);
 }
 .Footer-social{
     display: flex;
@@ -111,6 +133,26 @@ body{
 .fx-sm-ico{
     height: 4rem;
 }
+.extra-info{
+    margin-top: 4rem;
+}
+.text-fx{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--fxpurple);
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.text-link{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--fxgrey);
+    margin-left: 2rem;
+}
+.texto-fx{
+    color: var(--fxpurple);
+    text-transform: uppercase;
+}
 .Footer-copyright{
     background-color: var(--fxpurple);
     color: var(--fxwhite);
@@ -119,8 +161,4 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
-.texto-fx{
-    color: var(--fxpurple);
-    text-transform: uppercase;
 }

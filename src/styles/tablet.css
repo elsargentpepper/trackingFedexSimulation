@@ -6,11 +6,11 @@ body{
     padding: .5rem;
 }
 .Header-logo{
-    max-height: 1.5rem;
+    max-height: 3rem;
 }
 .Nav-search{
     display: flex;
-    height: 2rem;
+    height: 4rem;
     padding-left: 2rem;
     padding-right: 0;
 }
