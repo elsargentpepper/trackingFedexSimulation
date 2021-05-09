@@ -16,11 +16,7 @@ Insert gif or link to demo
   
 ## Deployment
 
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+https://elsargentpepper.github.io/trackingFedexSimulation/
 
   
 ## Authors
