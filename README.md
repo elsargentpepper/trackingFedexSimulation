@@ -4,9 +4,9 @@ Replica of the tracking webpage of FedEx, as a technical test for web developers
 
 ## Tech Stack
 
-**Client:** HTLM, CSS, Javascript, Webpack, NodeJS, Babel
+**Client:** HTLM, CSS, Javascript, Webpack, NodeJS, Babel, TravisCI
 
-**Server:** Cypress
+**Server:** Cypress, Postman
 
   
 ## Demo
