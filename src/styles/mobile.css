@@ -294,9 +294,10 @@ textarea{
 textarea:focus{
     outline: none;
 }
-select.lang-menu-select{
-    width: 300px;
-    height: 5rem;
+#lang-menu-select{
+    margin-left: 20px;
+    width: 200px;
+    height: 4rem;
     border: none;
     background-color: var(--fxlightgrey);
     padding-left: 2rem ;
