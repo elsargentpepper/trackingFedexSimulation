@@ -33,7 +33,7 @@ const Home = (data) => {
                 ${tracking_options_info.map(option =>
                     `<div class="options-single">
                         <picture>
-                            <img class="options-pic" src="${option.image}" alt="">
+                            <img class="options-pic" src="/src/sources/${option.image}" alt="">
                         </picture>
                         <div class="advanced-tx">
                             <h3 class="title-opt">${option.title}</h3>
@@ -58,7 +58,7 @@ const Home = (data) => {
             <div class="extra-info-inner">
                 <div class="text-fx">${language}</div>
                     <figure>
-                        <img class="globe" src="/images/globe.png" alt="globe">
+                        <img class="globe" src="/src/sources/images/globe.png" alt="globe">
                         <div><a class="text-link" href="">México</a></div>
                     </figure>
                 </div>
