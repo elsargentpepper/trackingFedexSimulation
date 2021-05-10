@@ -5,6 +5,7 @@ const Home = (data) => {
     const tracking_options_info = data.tracking_options_info || {};
     const company_info = data.company_info || {};
     const language = data.language || "";
+    const currentLanguage = window.localStorage.getItem('lang') || 'es';
 
     const view = `
     <div class="content">
@@ -20,7 +21,7 @@ const Home = (data) => {
         <h2 class="title">${tracking_info.title}</h2>
         <p class="title-p">${tracking_info.description}</p>
         <div class="tracking">
-            <select>
+            <select class="track-menu-info">
                 ${tracking_options.map(option =>
                     `<option label="${option.label}" value="${option.value}"></option>`
                 ).join('')}
@@ -59,7 +60,12 @@ const Home = (data) => {
                 <div class="text-fx">${language}</div>
                     <figure>
                         <img class="globe" src="/src/sources/images/globe.png" alt="globe">
-                        <div><a class="text-link" href="">México</a></div>
+                        <div class="lang-menu">
+                        <select name="lang-menu-select" id="lang-menu-select">
+                            <option ${ currentLanguage === 'es' ? "selected" : "" } value="es">Español</option>
+                            <option ${ currentLanguage === 'en' ? "selected" : "" } value="en">English</option>
+                        </select>
+                    </div>
                     </figure>
                 </div>
             </div>

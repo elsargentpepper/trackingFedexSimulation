@@ -4,12 +4,12 @@ const axios = require('axios');
 
 const BASE_URL = 'https://fedx-backend.herokuapp.com/api/fedx';
 
-FedxApiResource.getView = async (page = 'home') => {
+FedxApiResource.getView = async (page = 'home', lang) => {
     const url = `${BASE_URL}/view?content=${page}`;
 
     const config = {
         headers: {
-            lang: "es"
+            lang
         }
     };
 

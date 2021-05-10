@@ -10,7 +10,10 @@ const router = async () => {
     const footer = null || document.getElementById('footer');
     const content = null || document.getElementById('content');
 
-    const viewContent = await FedxApiResource.getView();
+    const lang = window.localStorage.getItem('lang') || "es";
+    console.log('lang', lang);
+
+    const viewContent = await FedxApiResource.getView(undefined, lang);
     console.log(viewContent);
 
     const headerData = viewContent.header || {}; 
@@ -45,6 +48,11 @@ const router = async () => {
         $('btn-chat').hide();
     }
 
+    const lang_button = document.getElementById('lang-menu-select');
+    lang_button.onchange = function() {
+        window.localStorage.setItem('lang', this.value);
+        location.reload();
+    }
 };
 
 export default router;
