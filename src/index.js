@@ -1,10 +1,7 @@
-import css from "mobile.css";
-import cssTablet from "tablet.css";
-import cssDesktop from "desktop.css";
+import css from "./styles/mobile.css";
+import cssTablet from "./styles/tablet.css";
+import cssDesktop from "./styles/desktop.css";
 
 import router from '../src/routes/index';
 
 window.addEventListener('load', router);
-window.addEventListener('load', css);
-window.addEventListener('load', cssTablet);
-window.addEventListener('load', cssDesktop);
