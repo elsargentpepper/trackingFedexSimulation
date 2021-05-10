@@ -126,7 +126,7 @@ body{
 .tracking{
     position: relative;
 }
-select{
+select.track-menu-info{
     width: 800px;
     height: 5rem;
     border: none;
@@ -292,6 +292,13 @@ textarea{
 }
 textarea:focus{
     outline: none;
+}
+select.lang-menu-select{
+    width: 300px;
+    height: 5rem;
+    border: none;
+    background-color: var(--fxlightgrey);
+    padding-left: 2rem ;
 }
 @media screen and (min-width:768px){
     #header{
