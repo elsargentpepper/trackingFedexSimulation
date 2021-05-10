@@ -69,7 +69,7 @@ const Home = (data) => {
             <form action="form-container">
                 <textarea type="text" placeholder="Type away..." name="msg" required=""></textarea>
                 <div class="chat-buttons">
-                    <button type="submit" class="btn btn-info btn-lg btn-send">Enviar</button>
+                    <button type="button" class="btn btn-info btn-lg btn-send">Enviar</button>
                     <button type="button" class="btn btn-danger btn-lg btn-close" onclick="closeChat()">Cerrar</button>
                 </div>
                 
