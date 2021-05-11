@@ -6,22 +6,22 @@ const Footer = (data) => {
                 <span class="texto-fx">${data.social_cta}</span>
                 <div class="icon-link">
                     <a href="https://www.facebook.com/FedEx/" target="_blank">
-                        <img class="fx-sm-ico" src="src/sources/images/facebook.png" alt="Facebook">
+                        <img class="fx-sm-ico" src="assets/images/facebook.png" alt="Facebook">
                     </a>
                 </div>
                 <div class="icon-link">
                     <a href="https://twitter.com/FedEx" target="_blank">
-                        <img class="fx-sm-ico" src="src/sources/images/twitter.png" alt="Twitter">
+                        <img class="fx-sm-ico" src="assets/images/twitter.png" alt="Twitter">
                     </a>
                 </div>
                 <div class="icon-link" target="_blank">
                     <a href="https://www.youtube.com/channel/UCq5UqvM2Pob3wNX2tJUx7Kg/custom">
-                        <img class="fx-sm-ico" src="src/sources/images/yt.png" alt="Youtube">
+                        <img class="fx-sm-ico" src="assets/images/yt.png" alt="Youtube">
                     </a>
                 </div>
                 <div class="icon-link" target="_blank">
                     <a href="https://mx.linkedin.com/company/fedex">
-                        <img class="fx-sm-ico" src="src/sources/images/linkedin.png" alt="LinkedIn">
+                        <img class="fx-sm-ico" src="assets/images/linkedin.png" alt="LinkedIn">
                     </a>
                 </div>
             </div>

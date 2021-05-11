@@ -3,7 +3,7 @@ const Header = (data) => {
     <div class="Header-main">
         <nav class="Header-nav">
                 <div>
-                    <a href="/"><image class="Header-logo" src="/src/sources/images/logo.png" alt="Página de inicio de FedEx"/></a>
+                    <a href="/"><image class="Header-logo" src="assets/images/logo.png" alt="Página de inicio de FedEx"/></a>
                 </div>
                 <ul class="Nav-menu">
                     <li class="Nav-item">
@@ -21,10 +21,10 @@ const Header = (data) => {
                 </ul>
                 <div class="Nav-icons">
                     <div>
-                            <a href=""><image class="Nav-user" src="/src/sources/images/user.png" alt="User login"/></a>
+                            <a href=""><image class="Nav-user" src="assets/images/user.png" alt="User login"/></a>
                     </div>
                     <div>
-                            <a href=""><image class="Nav-search" src="/src/sources/images/loupe.png" alt="Search"/></a>
+                            <a href=""><image class="Nav-search" src="assets/images/loupe.png" alt="Search"/></a>
                     </div>
                     <div class="hamburger">
                         <span class="bar"></span>
