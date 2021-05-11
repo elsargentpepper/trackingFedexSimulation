@@ -59,7 +59,7 @@ const Home = (data) => {
             <div class="extra-info-inner">
                 <div class="text-fx">${language}</div>
                     <figure>
-                        <img class="globe" src="/src/assets/images/globe.png" alt="globe">
+                        <img class="globe" src="assets/images/globe.png" alt="globe">
                         <div class="lang-menu">
                         <select name="lang-menu-select" id="lang-menu-select">
                             <option ${ currentLanguage === 'es' ? "selected" : "" } value="es">Español</option>
