@@ -21,10 +21,10 @@ module.exports = {
                 }
             },
             {
-                test: /\.(s*)css$/,
+                test: /\.css$/i,
                 use: [
                     { loader: MiniCssExtractPlugin.loader },
-                    'css-loader',
+                    'css-loader'
                 ],
             },
             {
@@ -41,8 +41,6 @@ module.exports = {
             filename: './index.html',
             }
         ),
-        new MiniCssExtractPlugin({
-            filename: "assets/[name].css",
-        }),
+        new MiniCssExtractPlugin(),
     ]
 }

@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1024px) {
 #header{
     padding: 1rem;
 }
@@ -75,4 +76,5 @@ ul{
 .texto-fx{
     font-weight: bold;
     font-size: 1rem;
+}
 }

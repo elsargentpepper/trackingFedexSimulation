@@ -2,6 +2,9 @@ import Header from '../templates/Header';
 import Home from '../pages/Home';
 import Error404 from '../templates/Header';
 import Footer from '../templates/Footer';
+import '../styles/mobile.css';
+import '../styles/tablet.css';
+import '../styles/desktop.css';
 
 const FedxApiResource = require('../resources/FedxApiResource');
 
