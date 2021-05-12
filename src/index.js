@@ -1,5 +1,5 @@
-import "./styles/mobile.css";
+import "@styles/mobile.css";
 
-import router from '../src/routes/index';
+import router from '@routes/index';
 
 window.addEventListener('load', router);
