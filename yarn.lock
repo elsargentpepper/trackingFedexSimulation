@@ -1101,6 +1101,13 @@
   "resolved" "https://registry.npmjs.org/clean-stack/-/clean-stack-2.2.0.tgz"
   "version" "2.2.0"
 
+"clean-webpack-plugin@*":
+  "integrity" "sha512-+X6mASBbGSVyw8L9/1rhQ+vS4uaQMopf194kX7Aes8qfezgCFL+qv5W0nwP3a0Tud5kUckARk8tFcoyOSKEjhg=="
+  "resolved" "https://registry.npmjs.org/clean-webpack-plugin/-/clean-webpack-plugin-4.0.0-alpha.0.tgz"
+  "version" "4.0.0-alpha.0"
+  dependencies:
+    "del" "^4.1.1"
+
 "cliui@^4.0.0":
   "integrity" "sha512-4FG+RSG9DL7uEwRUZXZn3SS34DiDPfzP0VOiEwtUWlE+AR2EIg+hSyvrIgUUfhdgR/UkAeW2QHgeP+hWrXs7jQ=="
   "resolved" "https://registry.npmjs.org/cliui/-/cliui-4.1.0.tgz"
@@ -6184,7 +6191,7 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
-"webpack@^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@^5.0.0", "webpack@>=2", "webpack@4.41.2", "webpack@4.x.x":
+"webpack@^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@^5.0.0", "webpack@>=2", "webpack@>=4.0.0 <6.0.0", "webpack@4.41.2", "webpack@4.x.x":
   "integrity" "sha512-Zhw69edTGfbz9/8JJoyRQ/pq8FYUoY0diOXqW0T6yhgdhCv6wr0hra5DwwWexNRns2Z2+gsnrNcbe9hbGBgk/A=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-4.41.2.tgz"
   "version" "4.41.2"
