@@ -34,7 +34,7 @@ const Home = (data) => {
                 ${tracking_options_info.map(option =>
                     `<div class="options-single">
                         <picture>
-                            <img class="options-pic" src="assets/${option.image}" alt="">
+                            <img class="options-pic" src="assets${option.image}" alt="">
                         </picture>
                         <div class="advanced-tx">
                             <h3 class="title-opt">${option.title}</h3>
